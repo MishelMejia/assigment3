@@ -1,0 +1,240 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  text-align: center; /* Centers content by default */
+}
+
+header {
+  background: linear-gradient(90deg, #b1905f, #f4e3bc);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header .logo img {
+  max-width: 200px; /* Adjusts logo size */
+  height: auto;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #b1905f;
+}
+
+.hero {
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #f4e3bc, #fff);
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.facts, .nutrition {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: left;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.facts h2, .nutrition h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #b1905f;
+  margin-bottom: 1rem;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.nutrition table th, .nutrition table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.nutrition table th {
+  background-color: #f4e3bc;
+  color: #333;
+}
+
+.carousel {
+  position: relative;
+  width: 300px;
+  margin: 2rem auto;
+}
+
+.carousel .images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 1900px; /* Adjusts width for 4 images */
+}
+
+.carousel img {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.nav.prev {
+  left: -40px;
+}
+
+.nav.next {
+  right: -40px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+input[type="radio"]:checked + .dot {
+  background: #b1905f;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer .footer-logo img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+footer form {
+  margin-top: 1rem;
+}
+
+footer form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+footer form input, footer form textarea {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+footer form button {
+  background: #b1905f;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer form button:hover {
+  background: #f4e3bc;
+  color: #333;
+}
+/* Styling for SVG */
+.logo svg, .footer-svg svg {
+  margin-top: 10px;
+}
+
+.logo svg circle, .footer-svg svg circle {
+  transition: stroke-width 0.3s ease, stroke 0.3s ease;
+}
+
+.logo svg circle:hover, .footer-svg svg circle:hover {
+  stroke-width: 6;
+  stroke: #f4e3bc;
+}
+
+.logo svg text, .footer-svg svg text {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  transition: fill 0.3s ease;
+}
+
+.logo svg text:hover, .footer-svg svg text:hover {
+  fill: #333;
+}
+
+

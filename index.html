@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrero Rocher</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Ferrero Rocher Logo">
+      <h1>Ferrero Rocher</h1>
+      <!-- SVG added below the title -->
+      <svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="50" stroke="#b1905f" stroke-width="4" fill="none" />
+        <text x="60" y="65" text-anchor="middle" font-size="16" fill="#b1905f">Luxury</text>
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#facts">Facts</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#nutrition">Nutrition</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>The Golden Experience</h2>
+      <p>Discover the perfect harmony of hazelnut, chocolate, and wafer wrapped in gold.</p>
+      <img src="images/ferrero.jpg" alt="Ferrero Rocher main">
+    </section>
+
+    <section id="facts" class="facts">
+      <h2>Interesting Facts</h2>
+      <p>Ferrero Rocher was first introduced in 1982 in Europe. It is one of the most loved chocolates globally, with its iconic gold wrapping symbolizing luxury and elegance.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2>Image Gallery</h2>
+      <div class="carousel">
+        <!-- Radio inputs -->
+        <input type="radio" name="carousel" id="image1" checked>
+        <input type="radio" name="carousel" id="image2">
+        <input type="radio" name="carousel" id="image3">
+        <input type="radio" name="carousel" id="image4">
+
+        <!-- Image container -->
+        <div class="images">
+          <img src="images/ferrero1.jpg" alt="Ferrero 1">
+          <img src="images/ferrero2.jpg" alt="Ferrero 2">
+          <img src="images/ferrero3.jpg" alt="Ferrero 3">
+          <img src="images/ferrero4.jpg" alt="Ferrero 4">
+        </div>
+
+        <!-- Navigation buttons -->
+        <label for="image4" class="nav prev">&lt;</label>
+        <label for="image2" class="nav next">&gt;</label>
+
+        <!-- Navigation dots -->
+        <div class="dots">
+          <label for="image1" class="dot"></label>
+          <label for="image2" class="dot"></label>
+          <label for="image3" class="dot"></label>
+          <label for="image4" class="dot"></label>
+        </div>
+      </div>
+    </section>
+
+    <section id="nutrition" class="nutrition">
+      <h2>Nutritional Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Serving Size</th>
+            <th>Calories</th>
+            <th>Fat</th>
+            <th>Carbs</th>
+            <th>Protein</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3 pieces (38g)</td>
+            <td>230</td>
+            <td>16g</td>
+            <td>17g</td>
+            <td>3g</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-logo">
+      <img src="images/ferrerolast.jfif" alt="Ferrero last">
+    </div>
+    <div class="footer-info">
+      <p>© 2024 Ferrero Rocher. All rights reserved.</p>
+      <p>Email: contact@ferrerorocher.com | Phone: +1 800 123 4567</p>
+    </div>
+    <form>
+      <h3>Contact Us</h3>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message"></textarea>
+      <button type="submit" class="hover-button">Send</button>
+    </form>
+    <!-- SVG added in the footer -->
+    <div class="footer-svg">
+      <svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="50" stroke="#b1905f" stroke-width="4" fill="none" />
+        <text x="60" y="65" text-anchor="middle" font-size="16" fill="#b1905f">Sweet</text>
+      </svg>
+    </div>
+  </footer>
+</body>
+</html>
+
